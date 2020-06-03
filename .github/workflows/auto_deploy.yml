@@ -31,5 +31,5 @@ jobs:
     - name: Installing Surge
       run: npm Install --global surge
     - name: Deploying using surge
-      run: surge ./ mashreqsol.surge.sh
+      run: surge ./ mashreqsol.surge.sh --token $ {{secrets.SECRET_TOKEN}}
       
