@@ -28,8 +28,8 @@ jobs:
       
 
     # Runs a set of commands using the runners shell
-    - name: Installing Surge
-      run: npm Install --global surge
+    - name: Installing surge
+      run: npm install --global surge
     - name: Deploying using surge
-      run: surge ./ mashreqsol.surge.sh --token $ {{secrets.SECRET_TOKEN}}
+      run: surge ./ mashreqsol.surge.sh --token ${{secrets.SECRET_TOKEN}}
       
